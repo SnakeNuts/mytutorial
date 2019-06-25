@@ -2,6 +2,7 @@ package com.crouzen.mytutorial;
 
 import com.crouzen.mytutorial.blocks.FirstBlock;
 import com.crouzen.mytutorial.blocks.ModBlocks;
+import com.crouzen.mytutorial.items.FirstItem;
 import com.crouzen.mytutorial.setup.ClientProxy;
 import com.crouzen.mytutorial.setup.IProxy;
 import com.crouzen.mytutorial.setup.ModSetup;
@@ -51,6 +52,7 @@ public class MyTutorial {
             Item.Properties properties = new Item.Properties()
                     .group(setup.itemGroup);
             event.getRegistry().register(new BlockItem(ModBlocks.FIRSTBLOCK, properties).setRegistryName("firstblock"));
+            event.getRegistry().register(new FirstItem());
         }
     }
 }
